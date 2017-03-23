@@ -14,6 +14,10 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - CTMediator (0.0.3)
+  - HbGoodsDetail (0.0.2)
+  - HbGoodsDetailBusinessCategory (0.0.1):
+    - CTMediator
   - MBProgressHUD (1.0.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -25,14 +29,19 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - HbGoodsDetail
+  - HbGoodsDetailBusinessCategory
   - MBProgressHUD
   - ReactiveCocoa
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CTMediator: c9a1203561e2232cb9a72822659159a02ae3cf20
+  HbGoodsDetail: ab41124493b4542f3523e50db3e16fcbd97bc8f3
+  HbGoodsDetailBusinessCategory: 85893624a349232a3ec1b53912ddb732295db1f4
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
-PODFILE CHECKSUM: 9665a4cb66268130db3d62de813d8dc41d095a71
+PODFILE CHECKSUM: df018669a838ff9e612e3d9c4cdc2a7783aaf59a
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.2.1.beta.1

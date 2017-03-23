@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RequestViewModel.h"
 
-@interface DataListVC : UIViewController
+@interface DataListVC : UIViewController<UITableViewDelegate>
 
 @property (nonatomic, weak) UITableView *tableView;
 @property (nonatomic, strong) RequestViewModel *requesViewModel;

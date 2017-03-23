@@ -7,6 +7,7 @@
 //
 
 #import "DataListVC.h"
+#import <HbGoodsDetailBusinessCategory/CTMediator+HbGoodsDetail.h>
 
 @implementation DataListVC
 
@@ -23,6 +24,7 @@
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
     tableView.dataSource = self.requesViewModel;
+    tableView.delegate = self;
     
     [self.view addSubview:tableView];
     self.tableView = tableView;
@@ -43,6 +45,12 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIViewController *goodsDetailVC = [[CTMediator sharedInstance] goodsDetailViewControllerWithGoodsId:@"001" goodsName:@"测试商品"];
+    [self.navigationController pushViewController:goodsDetailVC animated:YES];
     
 }
 

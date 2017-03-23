@@ -1,0 +1,1 @@
+../../../HbGoodsDetailBusinessCategory/HbGoodsDetailBusinessCategory/CTMediator+HbGoodsDetail.h

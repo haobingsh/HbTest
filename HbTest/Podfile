@@ -1,4 +1,4 @@
-platform :ios, '7.0'
+platform :ios, '8.0'
 inhibit_all_warnings!
 source 'https://github.com/CocoaPods/Specs.git'
 
@@ -7,5 +7,7 @@ target 'HbTest' do
 pod 'ReactiveCocoa'
 pod 'MBProgressHUD'
 pod 'AFNetworking'
+pod 'HbGoodsDetail'
+pod 'HbGoodsDetailBusinessCategory'
 
 end
